@@ -1,12 +1,31 @@
-.navbar-lewagon {
-  justify-content: space-between;
+@media screen and (max-width: 480px) {
+ .logo-home {
+    width: 80px;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .logo-home {
+    width: 50px;
+    margin-right: 70px;
+  }
+  .navbar-login-links {
+    margin-left: auto;
+  }
+}
+
+.navbar {
+  height: 88px;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+
+.navbar-white {
   background: white;
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
-}
-
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+.navbar-transparent {
+  background: transparent;
 }

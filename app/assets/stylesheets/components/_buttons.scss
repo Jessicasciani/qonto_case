@@ -1,0 +1,35 @@
+.btn {
+  font-size: 16px;
+  text-align: center;
+  border-radius: 6px;
+  width: fit-content;
+}
+
+.btn--qonto {
+  background-color: $purple;
+  color: white;
+}
+
+.btn--sm {
+  height: 40px;
+  padding: 6px 10px;
+}
+
+.btn--lg {
+  height: 48px;
+  padding: 10px 15px;
+}
+
+.btn--gray {
+  background: #E9EAF0;
+  color: #414660;
+}
+
+.btn--home {
+  display: block;
+  padding: 10px 30px;
+}
+
+.btn--centered {
+  margin: 40px auto;
+}
