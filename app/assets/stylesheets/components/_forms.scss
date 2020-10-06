@@ -1,0 +1,13 @@
+.form--newsletter {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  .form-group {
+    margin-bottom: 0;
+  }
+}
+
+.form--newsletter__input {
+  border: none;
+  width: 220px;
+}

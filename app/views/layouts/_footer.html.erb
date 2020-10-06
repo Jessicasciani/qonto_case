@@ -57,7 +57,13 @@
       <%= image_tag "FR.png", width: "20"%>
     </div>
     <div class="newsletter">
-
+      <%= simple_form_for @subscriber, html: {class: "form--newsletter"} do |f| %>
+        <%= f.error_notification %>
+        <%= f.input :email, required: true, input_html: {class: "form--newsletter__input"} , placeholder: "Votre email", label: false %>
+        <%= button_tag(type: 'submit', class: "btn btn--purple-light") do %>
+          <i class="fas fa-arrow-right"></i>
+        <% end %>
+      <% end %>
     </div>
   </div>
 
