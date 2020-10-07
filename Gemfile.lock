@@ -90,6 +90,7 @@ GEM
       sassc (>= 1.11)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
+    hashery (2.1.2)
     i18n (1.8.5)
       concurrent-ruby (~> 1.0)
     io-like (0.3.1)
@@ -116,6 +117,8 @@ GEM
     nokogiri (1.10.10)
       mini_portile2 (~> 2.4.0)
     pg (1.2.3)
+    prismic.io (1.8.0)
+      hashery (~> 2.1.1)
     pry (0.13.1)
       coderay (~> 1.1)
       method_source (~> 1.0)
@@ -254,6 +257,7 @@ DEPENDENCIES
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
   pg (>= 0.18, < 2.0)
+  prismic.io
   pry-byebug
   pry-rails
   puma (~> 3.11)
