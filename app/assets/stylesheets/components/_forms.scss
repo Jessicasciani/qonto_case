@@ -9,5 +9,22 @@
 
 .form--newsletter__input {
   border: none;
-  width: 220px;
+  &:focus {
+    outline: 0;
+    box-shadow: none;
+  }
 }
+
+@media screen and (max-width: 480px) {
+  .form--newsletter__input {
+    width: 75vw;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .form--newsletter__input {
+    width: 15.5vw;
+  }
+}
+
+
