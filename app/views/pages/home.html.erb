@@ -1,8 +1,8 @@
 <section class="hero-home">
   <div class="container-hero margin-container-home">
     <div class="text-home-container">
-      <h1 class="title-1 title-1--purple padding-section">La néobanque  des entreprises  et des indépendants</h1>
-      <p class="subtext-hero">L'alternative bancaire idéale destinée aux  entreprises de 1 à 200 personnes.</p>
+      <h1 class="title-1 title-1--purple padding-section"><%= @results.fragments["title"].as_text() %></h1>
+      <p class="subtext-hero"><%= @results.fragments["subtitle"].as_text() %></p>
 
       <div class="hide-mobile">
         <div class="d-flex">
