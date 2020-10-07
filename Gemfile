@@ -43,6 +43,7 @@ gem 'font-awesome-sass'
 gem 'simple_form'
 gem 'factory_bot', '~> 6.1'
 gem 'shoulda-matchers', '~> 4.4', '>= 4.4.1'
+gem 'prismic.io', require: 'prismic'
 
 group :development, :test do
   gem 'pry-byebug'
