@@ -41,8 +41,6 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'autoprefixer-rails'
 gem 'font-awesome-sass'
 gem 'simple_form'
-gem 'factory_bot', '~> 6.1'
-gem 'shoulda-matchers', '~> 4.4', '>= 4.4.1'
 gem 'prismic.io', require: 'prismic'
 
 group :development, :test do
@@ -70,6 +68,8 @@ group :test do
   gem 'selenium-webdriver'
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
+  gem 'factory_bot', '~> 6.1'
+  gem 'shoulda-matchers', '~> 4.4', '>= 4.4.1'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
