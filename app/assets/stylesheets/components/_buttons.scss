@@ -2,12 +2,19 @@
   font-size: 16px;
   text-align: center;
   border-radius: 6px;
-  width: fit-content;
+  width: max-content;
+  &:focus {
+    outline: 0;
+    box-shadow: none;
+  }
 }
 
 .btn--qonto {
   background-color: $purple;
   color: white;
+  &:hover {
+    color: white;
+  }
 }
 
 .btn--sm {
