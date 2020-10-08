@@ -1,7 +1,7 @@
 @media screen and (max-width: 480px) {
   .footer__links__group {
-    width: 40%;
-    margin: 12px 10px;
+    width: 43%;
+    margin: 12px 2px;
   }
   .footer {
     padding: 35px 24px;
@@ -21,12 +21,22 @@
     width: 20%;
   }
   .footer__links__group {
-    margin: 0 20px;
+    margin: 10px 20px;
     width: 22%;
   }
   .footer__links {
     width: 52%;
     padding-left: 50px;
+  }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .footer__links__group {
+    width: 35%;
+  }
+  .footer__links {
+    padding-left: 0px;
   }
 }
 
