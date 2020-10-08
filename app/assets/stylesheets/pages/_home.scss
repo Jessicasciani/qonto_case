@@ -2,7 +2,6 @@
 
 @media screen and (min-width: 480px) {
   .hero-home {
-    display: flex;
     background: linear-gradient(to bottom, #fff, #f5f6fa);
     height: 680px;
   }
@@ -12,6 +11,7 @@
     margin: 0 auto;
     margin-bottom: 48px;
     width: 100%;
+    height: 90%;
   }
   .title-1 {
     font-size: 52px;
@@ -26,6 +26,7 @@
     align-self: center;
     flex: 1;
     max-width: 50%;
+    z-index: 100;
   }
   .hide-desktop {
     display: none;
@@ -51,7 +52,7 @@
     max-width: 1024px;
     margin: auto;
     align-items: center;
-    padding-top: 120px;
+    padding: 60px 0px;
   }
   .feature__img {
     width: 492px;
@@ -71,6 +72,10 @@
   }
   .cta-home-buttons .btn {
     margin: 10px;
+  }
+  .max-width {
+    max-width: 1024px;
+    margin: auto;
   }
 }
 
@@ -128,6 +133,7 @@
     height: 190px;
     margin: auto;
     display: block;
+    object-fit: cover;
   }
   .container-hero {
     padding-top: 120px;
@@ -139,7 +145,7 @@
     padding-top: 64px;
   }
   .hero-home {
-    height: 100vh;
+    height: 90vh;
   }
   .reviews {
     display: none;
@@ -178,6 +184,12 @@
 
 // General
 
+.hero-home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .shape-separator {
   position: absolute;
   height: auto;
@@ -196,6 +208,9 @@
 
 .hero-home {
   position: relative;
+  a {
+    z-index: 2000;
+  }
 }
 
 #section-home-2 {
@@ -203,21 +218,21 @@
 }
 
 #section-home-3 {
-  background-image: linear-gradient(180deg, #F5F6FA 0%, rgba(245, 246, 250, 0.0001) 100%);
-  padding-top: 70px;
+  background-image: linear-gradient(180deg, #F5F6FA 0%, rgb(255, 255, 255) 100%);
+  padding-top: 20px;
 }
 
 #section-home-4 {
   background-image: linear-gradient(180deg, #F5F6FA 0%, rgba(245, 246, 250, 0.0001) 100%);
   padding: 140px 0px;
-  max-width: 1024px;
   margin: auto;
 }
 
 .clients-list {
-  margin: 80px auto;
+  margin: 50px auto;
   display: block;
-  width: 90vw;
+  object-fit: cover;
+  height: 65px;
 }
 
 .review {
@@ -251,14 +266,16 @@
   border: none;
   width: 320px;
   padding: 32px 40px;
+  justify-content: space-between;
 }
 .card__icon {
   width: 150px;
   display: block;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .card__text {
+  height: 40%;
   text-align: center;
   h3 {
     color: #1B1E2B;
@@ -284,4 +301,13 @@
 .review__name {
   margin-left: 25px;
   margin-bottom: 0px;
+}
+
+.arrow-scroll {
+  width: 15px;
+  margin-bottom: 15px;
+}
+
+html {
+  scroll-behavior: smooth;
 }
