@@ -22,36 +22,41 @@
       <p class="btn btn--gray btn--lg w-100">Contacter l'équipe commerciale</p>
     </div>
   </div>
+
+  <a href="#section-home-2"><%= image_tag "arrow-go-down.png", class: "arrow-scroll hide-mobile" %></a>
+
   <%= image_tag "circular-shape-hero-crop.svg", class: "shape-separator" %>
 
 </section>
 
 
 <section id="section-home-2">
-  <h2 class="text-center title-1 padding-section">Plus de 100 000 entreprises font confiance à Qonto</h2>
-  <%= image_tag "clients-list.svg", class: "clients-list" %>
+  <div class="max-width">
+    <h2 class="text-center title-1 padding-section">Plus de 100 000 entreprises font confiance à Qonto</h2>
+    <%= image_tag "clients-list.svg", class: "clients-list" %>
 
-  <!--  Reviews on Desktop -->
-  <div class="reviews">
-    <div class="review">
-      <p class="review__text">Un compte pro facile à ouvrir, et des conseillers (agréables, localisés en France et très compétents) très réactifs pour aplanir les petites inquiétudes ou incompréhensions !</p>
-      <div class="d-flex align-items-center">
-        <%= image_tag "review_1.png", class: "review__avatar" %>
-        <p class="review__name">Thomas G., commentaire Facebook</p>
+    <!--  Reviews on Desktop -->
+    <div class="reviews">
+      <div class="review">
+        <p class="review__text">Un compte pro facile à ouvrir, et des conseillers (agréables, localisés en France et très compétents) très réactifs pour aplanir les petites inquiétudes ou incompréhensions !</p>
+        <div class="d-flex align-items-center">
+          <%= image_tag "review_1.png", class: "review__avatar" %>
+          <p class="review__name">Thomas G., commentaire Facebook</p>
+        </div>
       </div>
-    </div>
-     <div class="review">
-      <p class="review__text">Un service simple d'utilisation, une interface vraiment pensée pour le client et un service client ultra réactif !</p>
-      <div class="d-flex align-items-center">
-        <%= image_tag "review_2.png", class: "review__avatar" %>
-        <p class="review__name">Jean-Charles Samuelian,  fondateur @Alan</p>
+       <div class="review">
+        <p class="review__text">Un service simple d'utilisation, une interface vraiment pensée pour le client et un service client ultra réactif !</p>
+        <div class="d-flex align-items-center">
+          <%= image_tag "review_2.png", class: "review__avatar" %>
+          <p class="review__name">Jean-Charles Samuelian,  fondateur @Alan</p>
+        </div>
       </div>
-    </div>
-     <div class="review">
-      <p class="review__text">Très efficace et très bonne réactivité, sans parler du coût. Enfin une solution efficace pour les petits entrepreneurs. Enfin une néobanque pours les pros.</p>
-      <div class="d-flex align-items-center">
-        <%= image_tag "review_3.png", class: "review__avatar" %>
-        <p class="review__name">Ludovic C., vu sur le PlayStore</p>
+       <div class="review">
+        <p class="review__text">Très efficace et très bonne réactivité, sans parler du coût. Enfin une solution efficace pour les petits entrepreneurs. Enfin une néobanque pours les pros.</p>
+        <div class="d-flex align-items-center">
+          <%= image_tag "review_3.png", class: "review__avatar" %>
+          <p class="review__name">Ludovic C., vu sur le PlayStore</p>
+        </div>
       </div>
     </div>
   </div>
@@ -148,50 +153,51 @@
     <p class="hide-desktop margin-container-home feature__text__p">Qonto fournit tous les outils financiers qu’une banque pro traditionnelle propose, en mieux ! Virements, prélèvements, paiements, mais également tous les outils pour simplifier la comptabilité et la gestion financière de votre entreprise.</p>
     <p class="btn btn--lg btn--gray btn--home hide-desktop margin-container-home">Ouvrir un compte pro</p>
   </div>
-  <%= image_tag "background-circular-shape-2.svg", class: "w-100" %>
+  <%= image_tag "background-circular-shape-2.svg", class: "w-100 d-block" %>
 
 </section>
 
 <section id="section-home-4">
-  <div class="margin-container-home">
-    <h2 class="title-1 text-center">Un compte professionnel adapté  à la taille de votre entreprise</h2>
-    <p class="subtext-hero text-center">Qonto s’adresse à toutes les entreprises et à toutes les formes juridiques, que vous soyez un freelance  ou une équipe de 2 à 200 personnes.</p>
-  </div>
+  <div class="max-width">
+    <div class="margin-container-home">
+      <h2 class="title-1 text-center">Un compte professionnel adapté  à la taille de votre entreprise</h2>
+      <p class="subtext-hero text-center">Qonto s’adresse à toutes les entreprises et à toutes les formes juridiques, que vous soyez un freelance  ou une équipe de 2 à 200 personnes.</p>
+    </div>
 
-  <div class="cards-home">
-    <div class="card">
-      <%= image_tag "badge-freelance.svg", class: "card__icon" %>
-      <div class="card__text">
-        <h3>Pour les freelances  et indépendants</h3>
-        <p>Le compte professionnel pour les freelances. Ouverture du compte en 5 minutes. À partir de 9€ / mois (HT).</p>
+    <div class="cards-home">
+      <div class="card">
+        <%= image_tag "badge-freelance.svg", class: "card__icon" %>
+        <div class="card__text">
+          <h3>Pour les freelances  et indépendants</h3>
+          <p>Le compte professionnel pour les freelances. Ouverture du compte en 5 minutes. À partir de 9€ / mois (HT).</p>
+        </div>
+        <p class="btn btn--lg btn--gray btn--centered w-100">En savoir plus</p>
       </div>
-      <p class="btn btn--lg btn--gray btn--centered">En savoir plus</p>
+      <div class="card">
+        <%= image_tag "badge-team.svg", class: "card__icon" %>
+        <div class="card__text">
+          <h3>Pour les équipes  de 2 à 200 personnes</h3>
+          <p>L'alternative bancaire idéale pour les entreprises en remplacement ou en complément de votre compte bancaire professionnel.</p>
+        </div>
+        <p class="btn btn--lg btn--gray btn--centered w-100">En savoir plus</p>
+      </div>
+      <div class="card">
+        <%= image_tag "badge-creator.svg", class: "card__icon" %>
+        <div class="card__text">
+          <h3>Pour les créateurs d’entreprise</h3>
+          <p>Depôt de capital en ligne pour créer votre entreprise en toute simplicité.</p>
+        </div>
+        <p class="btn btn--lg btn--gray btn--centered w-100">En savoir plus</p>
+      </div>
     </div>
-    <div class="card">
-      <%= image_tag "badge-team.svg", class: "card__icon" %>
-      <div class="card__text">
-        <h3>Pour les équipes  de 2 à 200 personnes</h3>
-        <p>L'alternative bancaire idéale pour les entreprises en remplacement ou en complément de votre compte bancaire professionnel.</p>
+
+    <div class="cta-home-bottom">
+      <h2 class="title-1">Prêt à vous lancer ?</h2>
+      <p class="subtext-hero">Prêt à ouvrir un compte professionnel en ligne pour votre entreprise ? Que vous soyez seul ou en équipe, Qonto est le compte pro idéal pour votre société !</p>
+      <div class="cta-home-buttons">
+        <p class="btn btn--qonto btn--lg">Ouvrir un compte professionnel</p>
+        <p class="btn btn--gray btn--lg">Contacter l'équipe commerciale</p>
       </div>
-      <p class="btn btn--lg btn--gray btn--centered">En savoir plus</p>
-    </div>
-    <div class="card">
-      <%= image_tag "badge-creator.svg", class: "card__icon" %>
-      <div class="card__text">
-        <h3>Pour les créateurs d’entreprise</h3>
-        <p>Depôt de capital en ligne pour créer votre entreprise en toute simplicité.</p>
-      </div>
-      <p class="btn btn--lg btn--gray btn--centered">En savoir plus</p>
     </div>
   </div>
-
-  <div class="cta-home-bottom">
-    <h2 class="title-1">Prêt à vous lancer ?</h2>
-    <p class="subtext-hero">Prêt à ouvrir un compte professionnel en ligne pour votre entreprise ? Que vous soyez seul ou en équipe, Qonto est le compte pro idéal pour votre société !</p>
-    <div class="cta-home-buttons">
-      <p class="btn btn--qonto btn--lg">Ouvrir un compte professionnel</p>
-      <p class="btn btn--gray btn--lg">Contacter l'équipe commerciale</p>
-    </div>
-  </div>
-
 </section>
