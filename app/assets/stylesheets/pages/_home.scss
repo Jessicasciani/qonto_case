@@ -2,9 +2,11 @@
 
 @media screen and (min-width: 480px) {
   .hero-home {
-    display: flex;
     background: linear-gradient(to bottom, #fff, #f5f6fa);
     height: 680px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .container-hero {
     display: flex;
@@ -12,6 +14,7 @@
     margin: 0 auto;
     margin-bottom: 48px;
     width: 100%;
+    height: 90%;
   }
   .title-1 {
     font-size: 52px;
@@ -26,6 +29,7 @@
     align-self: center;
     flex: 1;
     max-width: 50%;
+    z-index: 100;
   }
   .hide-desktop {
     display: none;
@@ -71,6 +75,10 @@
   }
   .cta-home-buttons .btn {
     margin: 10px;
+  }
+  .max-width {
+    max-width: 1024px;
+    margin: auto;
   }
 }
 
@@ -196,6 +204,9 @@
 
 .hero-home {
   position: relative;
+  a {
+    z-index: 2000;
+  }
 }
 
 #section-home-2 {
@@ -217,7 +228,6 @@
 .clients-list {
   margin: 80px auto;
   display: block;
-  width: 90vw;
 }
 
 .review {
@@ -284,4 +294,13 @@
 .review__name {
   margin-left: 25px;
   margin-bottom: 0px;
+}
+
+.arrow-scroll {
+  width: 15px;
+  margin-bottom: 15px;
+}
+
+html {
+  scroll-behavior: smooth;
 }
